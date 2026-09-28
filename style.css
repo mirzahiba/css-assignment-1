@@ -1,0 +1,300 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0b0b16;
+    color: white;
+    line-height: 1.6;
+}
+
+
+header {
+    background-color: #10101f;
+    padding: 20px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    color: white;
+}
+
+.logo span {
+    color: #9b5cff;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar ul li a:hover {
+    color: #9b5cff;
+}
+
+
+
+.home {
+    min-height: 90vh;
+    padding: 80px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.home-text {
+    max-width: 600px;
+}
+
+.hello {
+    color: #9b5cff;
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+
+.home h1 {
+    font-size: 55px;
+    margin: 10px 0;
+}
+
+.home h1 span {
+    color: #9b5cff;
+}
+
+.home h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.home-text p {
+    color: #c9c9d4;
+    margin-bottom: 25px;
+}
+
+
+
+.home-image img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #9b5cff;
+    box-shadow: 0 0 30px #6f35b8;
+}
+
+
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #9b5cff;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #7139bd;
+    transform: translateY(-3px);
+}
+
+.second {
+    background-color: transparent;
+    border: 2px solid #9b5cff;
+}
+
+
+
+.heading {
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 35px;
+}
+
+.heading span {
+    color: #9b5cff;
+}
+
+
+
+.about {
+    padding: 80px 15%;
+    text-align: center;
+    background-color: #10101f;
+}
+
+.about p {
+    color: #c9c9d4;
+    font-size: 18px;
+}
+
+
+.skills {
+    padding: 80px 8%;
+}
+
+.skill-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.skill-box {
+    background-color: #151527;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid #292943;
+    transition: 0.3s;
+}
+
+.skill-box:hover {
+    border-color: #9b5cff;
+    transform: translateY(-8px);
+}
+
+.skill-box h3 {
+    color: #9b5cff;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.skill-box p {
+    color: #c9c9d4;
+}
+
+
+
+.projects {
+    padding: 80px 8%;
+    background-color: #10101f;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.project-box {
+    background-color: #151527;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #292943;
+}
+
+.project-box h3 {
+    color: #9b5cff;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.project-box p {
+    color: #c9c9d4;
+    margin-bottom: 20px;
+}
+
+.project-btn {
+    color: white;
+    text-decoration: none;
+    border: 1px solid #9b5cff;
+    padding: 8px 18px;
+    border-radius: 20px;
+}
+
+.project-btn:hover {
+    background-color: #9b5cff;
+}
+
+
+
+
+.contact {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.contact p {
+    color: #c9c9d4;
+    margin: 10px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #10101f;
+    color: #aaa;
+}
+
+
+@media (max-width: 900px) {
+
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .skill-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-container {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar ul {
+        gap: 10px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .home h1 {
+        font-size: 40px;
+    }
+
+    .home-image img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .skill-container {
+        grid-template-columns: 1fr;
+    }
+}
